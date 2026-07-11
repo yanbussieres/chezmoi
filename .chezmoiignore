@@ -1,7 +1,13 @@
-{{ if ne .machine "omarchy" }}
+{{ if ne .chezmoi.os "linux" }}
 .config/hypr/**
 .config/waybar/**
 .config/omarchy/**
+.config/mako/**
+.config/walker/**
+.config/uwsm/**
+.config/wiremix/**
+.config/swayosd/**
+.config/environment.d/**
 {{ end }}
 
 # Neovim is maintained as its own Git repository on this machine.
