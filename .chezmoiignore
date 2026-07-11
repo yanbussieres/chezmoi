@@ -1,0 +1,14 @@
+{{ if ne .machine "omarchy" }}
+.config/hypr/**
+.config/waybar/**
+.config/omarchy/**
+{{ end }}
+
+# Neovim is maintained as its own Git repository on this machine.
+.config/nvim/**
+
+# Omarchy-managed and generated state must never be managed by chezmoi.
+.local/share/omarchy/**
+.local/state/omarchy/**
+.config/omarchy/current/**
+.config/omarchy/themed/**
